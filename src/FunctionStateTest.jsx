@@ -3,6 +3,7 @@ import { useState } from "react"
 function FunctionStateTest() {
     const[name, setName] = useState("Dhanushka inside function");
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [users, setUsers] = useState(["Dhanushka", "Chris", "Alis", "Grey", "Brian", ]);
     
     const changeName = () =>{
         setName("Changed tha name using arrow function and setState")
@@ -34,6 +35,13 @@ function FunctionStateTest() {
             ) : (
                 <button onClick={logOutClick}>Log Out</button>
             )}
+
+            <p>======================================</p>
+            <ul>
+                {users.map((value, index) => (
+                    <li key={index}>{value}</li>
+                ))}
+            </ul>
         </>
     )
 }
