@@ -1,12 +1,10 @@
-import ClassStateTest from './ClassStateTest'
-import Counter from './Counter'
+import PropsSender from './PropsSender'
 
 function App() {
 
   return (
     <>
-      <ClassStateTest/>
-      <Counter/>
+      <PropsSender/>
     </>
   )
 }
