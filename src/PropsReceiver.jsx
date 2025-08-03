@@ -9,4 +9,10 @@ function PropsReceiver(props) {
     )
 }
 
-export default PropsReceiver
+// This one is not working after React version 18
+PropsReceiver.defaultProps = {
+    name: 'default',
+    age: '2025'
+}
+
+export default PropsReceiver;

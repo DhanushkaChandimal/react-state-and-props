@@ -6,6 +6,7 @@ function PropsSender() {
         <>
             <PropsReceiver name="Dhanushka" age="23"/>
             <PropsReceiver name="Chandimal" age="32"/>
+            <PropsReceiver/>
         </>
     )
 }
