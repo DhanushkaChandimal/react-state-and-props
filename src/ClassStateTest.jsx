@@ -12,7 +12,7 @@ class ClassStateTest extends Component{
     }
 
     changeName(){
-        this.setState({name: "Chandimal"})
+        this.setState({name: "Chandimal (set the name using setState)"})
     }
 
     render() {
